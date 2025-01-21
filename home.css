@@ -1,0 +1,129 @@
+/* Full-screen gradient background */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Game container */
+  .container {
+    text-align: center;
+  }
+  
+  /* Board styling */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  /* Individual cell styling */
+  .cell {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Status message */
+  .status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Reset button */
+  #reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #reset:hover {
+    background: #45a049;
+  }
+  
+  /* Popup styling */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .popup p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .popup #restart {
+    background: #4caf50;
+  }
+  
+  .popup #restart:hover {
+    background: #45a049;
+  }
+  
+  .popup #quit {
+    background: #f44336;
+  }
+  
+  .popup #quit:hover {
+    background: #e53935;
+  }
+  
