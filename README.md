@@ -1,4 +1,4 @@
-### 🎮 Tic Tac Toe Web Application  
+### **🎮 Tic Tac Toe Web Application  **
 
 A classic two-player Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**. This application features an intuitive design, smooth gameplay, and a logic-driven system to detect wins, losses, and draws.  
 
