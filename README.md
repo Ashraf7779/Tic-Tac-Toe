@@ -52,6 +52,6 @@ To run the project:
 
 ### 🎯 Deployment  
 
-The application is live and accessible: **[Tic Tac Toe Demo](https://ashraf7779.github.io/Prodigy_Task-02/)**  
+The application is live and accessible: **[Tic Tac Toe Demo]()**  
 
 ---
